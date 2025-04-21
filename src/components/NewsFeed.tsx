@@ -8,6 +8,7 @@ import { toast } from 'sonner';
 import SearchFilters, { TimeFilter, SortOption } from './SearchFilters';
 import EmptyState from './EmptyState';
 import SubmitNewsForm from './SubmitNewsForm';
+import { siteConfig } from '@/config/site';
 
 const NewsFeed = () => {
   const [news, setNews] = useState<NewsItem[]>([]);
@@ -134,7 +135,7 @@ const NewsFeed = () => {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px]">
         <Loader2 className="h-8 w-8 text-brand animate-spin mb-2" />
-        <p className="text-gray-500">Loading latest stablecoin news...</p>
+        <p className="text-gray-500">Loading latest {siteConfig.topic} news...</p>
       </div>
     );
   }

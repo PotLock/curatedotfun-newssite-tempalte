@@ -14,11 +14,18 @@ export function Footer() {
     <footer className="border-t">
       <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-          <img
-            src={siteConfig.logo}
-            alt={`${siteConfig.name} logo`}
-            className="h-8 w-auto"
-          />
+          <Link to="/" className="flex items-center gap-2">
+            <img
+              src={siteConfig.logo.image}
+              alt={`${siteConfig.name} logo`}
+              className="h-8 w-auto"
+            />
+            {siteConfig.logo.showText && (
+              <span className="font-heading text-lg font-bold text-foreground">
+                {siteConfig.logo.text}
+              </span>
+            )}
+          </Link>
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             {siteConfig.footer.description}
           </p>

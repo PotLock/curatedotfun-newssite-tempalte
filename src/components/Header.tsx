@@ -23,9 +23,18 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex">
-          <a className="mr-6 flex items-center space-x-2" href="/">
-            <img src={siteConfig.logo} alt={`${siteConfig.name} logo`} className="h-10 md:h-12" />
-          </a>
+          <Link to="/" className="mr-6 flex items-center space-x-2">
+            <img 
+              src={siteConfig.logo.image} 
+              alt={`${siteConfig.name} logo`} 
+              className="h-10 md:h-12" 
+            />
+            {siteConfig.logo.showText && (
+              <span className="font-heading text-xl font-bold text-foreground">
+                {siteConfig.logo.text}
+              </span>
+            )}
+          </Link>
         </div>
 
         {/* Desktop Navigation */}

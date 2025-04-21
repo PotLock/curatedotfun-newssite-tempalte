@@ -1,8 +1,12 @@
 export const siteConfig = {
   // Basic site information
-  name: "NEWSSITE",
+  name: "YOUR_SITE_NAME",
   description: "Your site description",
-  logo: "/path/to/your/logo.png",
+  logo: {
+    image: "/path/to/your/logo.png",
+    text: "YOUR_SITE_NAME",
+    showText: true,
+  },
   favicon: "/path/to/your/favicon.ico",
   metaImage: "/path/to/your/meta-image.png",
   

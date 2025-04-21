@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import NewsFeed from '@/components/NewsFeed';
+import { siteConfig } from '@/config/site';
 
 const Index = () => {
   const [isPageLoaded, setIsPageLoaded] = useState(false);
@@ -23,14 +23,11 @@ const Index = () => {
       <main className="flex-grow pt-24 md:pt-32 pb-12">
         <div className="container-narrow">
           <section className={`mb-16 transition-opacity duration-700 ${isPageLoaded ? 'opacity-100' : 'opacity-0'}`}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 text-center">
-              <span className="text-brand ">Stablecoin</span> News
+            <h1 className="text-4xl font-bold mb-4">
+              <span className="text-brand">{siteConfig.name}</span> News
             </h1>
-            <p className="text-xl text-gray-600 text-center max-w-2xl mx-auto">
-              The premier daily source for all things stablecoins, bringing you the latest updates and insights.
-              <span className="block text-xs mt-2">
-                powered by <a href="https://curate.fun" target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">curate.fun</a>
-              </span>
+            <p className="text-xl text-muted-foreground mb-8">
+              {siteConfig.description}
             </p>
           </section>
           

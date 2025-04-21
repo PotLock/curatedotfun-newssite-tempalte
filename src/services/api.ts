@@ -1,4 +1,3 @@
-
 import { NewsItem } from '@/types';
 import sampleData from './sampleData';
 import { defaultNewsData } from '@/utils/defaultData';
@@ -6,7 +5,7 @@ import { defaultNewsData } from '@/utils/defaultData';
 export const fetchNews = async (): Promise<NewsItem[]> => {
   try {
     // Fetch from the live API
-    const response = await fetch('https://stablecoins-rss.up.railway.app/api/items');
+    const response = await fetch('https://NEWSSITE-rss.up.railway.app/api/items');
     
     if (!response.ok) {
       throw new Error(`API responded with status: ${response.status}`);

@@ -24,7 +24,7 @@ const Index = () => {
         <div className="container-narrow">
           <section className={`mb-16 transition-opacity duration-700 ${isPageLoaded ? 'opacity-100' : 'opacity-0'}`}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 text-center">
-              <span className="text-brand">Stablecoin</span> News
+              <span className="text-brand ">Stablecoin</span> News
             </h1>
             <p className="text-xl text-gray-600 text-center max-w-2xl mx-auto">
               The premier daily source for all things stablecoins, bringing you the latest updates and insights.

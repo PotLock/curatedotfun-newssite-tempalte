@@ -248,9 +248,9 @@ export default function Learn() {
       <main className="flex-grow mt-24">
         <div className="container-narrow py-8">
           <div className="mb-10 text-center">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-4">Stablecoins 101</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-4">News Resources</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Your hub for learning about Stablecoins with basic education, laws, analytics, reports and news resources.
+              Your hub for learning about news with basic education, laws, analytics, reports and news resources.
             </p>
           </div>
 

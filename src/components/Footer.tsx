@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Send, Upload, BookOpen } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
@@ -17,13 +16,15 @@ const Footer = () => {
             <Link to="/" className="flex items-center">
               <img 
                 src="/lovable-uploads/2d4ceafd-1824-4085-bac7-a50af005350d.png" 
-                alt="stablecoins.press logo" 
+                alt="NEWSSITE logo"  // changehere
                 className="h-10"
               />
             </Link>
             <p className="text-gray-500 mt-2 text-sm">
-              The premier daily source for stablecoin news
+              Your newssiste description changehere
             </p>
+           {/* changehere your content with better usbtitile */}
+
             <a 
               href="https://t.me/stablecoinspress" 
               target="_blank" 
@@ -65,7 +66,7 @@ const Footer = () => {
         
         <div className="mt-10 pt-6 border-t border-gray-100 text-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} stablecoins.press. All rights reserved.
+            © {currentYear} NEWSSITE. All rights reserved.
           </p>
         </div>
       </div>

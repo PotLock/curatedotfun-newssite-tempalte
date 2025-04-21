@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Send, Upload, BookOpen } from 'lucide-react';
@@ -23,9 +22,9 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-white py-5'}`}>
       <div className="container-narrow flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/lovable-uploads/2d4ceafd-1824-4085-bac7-a50af005350d.png" alt="stablecoins.press logo" className="h-10 md:h-12" />
+          <img src="/lovable-uploads/2d4ceafd-1824-4085-bac7-a50af005350d.png" alt="NEWSSITE logo" className="h-10 md:h-12" /> 
         </Link>
-
+{/* changehere the  logo */}
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link 
@@ -36,7 +35,7 @@ const Header = () => {
             <span>Learn</span>
           </Link>
           <a 
-            href="https://t.me/stablecoinspress" 
+            href="https://t.me/NEWSSITE" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-black hover:text-brand transition-colors" 
@@ -76,7 +75,7 @@ const Header = () => {
               <span>Learn</span>
             </Link>
             <a 
-              href="https://t.me/stablecoinspress" 
+              href="https://t.me/NEWSSITE" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center text-black font-medium hover:text-brand transition-colors px-4 py-2 gap-2" 

@@ -1,4 +1,3 @@
-
 export default [
   {
     "tweetId": "1894390288489353508",
@@ -14,7 +13,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1894390288489353508",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@artemis @circle @Tether_to @PayPal @SkyEcosystem @FDLabsHQ @OndoFinance @withAUSD @Perena__",
@@ -39,7 +38,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1894476642845954331",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@szns_solutions",
@@ -64,7 +63,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1894209175284011218",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@base",
@@ -89,7 +88,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1896515522415800751",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -114,7 +113,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1896790344026538245",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@sbivc_official",
@@ -139,7 +138,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1896910993894289446",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@MaalyPay",
@@ -173,7 +172,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1897286868623855772",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -198,7 +197,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1897379237167825104",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -223,7 +222,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1897366511175528907",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@Scroll_ZKP @stable_summit",
@@ -248,7 +247,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1896996290657173531",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@stable_summit",
@@ -282,7 +281,7 @@ export default [
       },
       {
         "tweetId": "1897539540950426059",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@AvaLabs",
@@ -316,7 +315,7 @@ export default [
       },
       {
         "tweetId": "1899446974941905132",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@avax @base @ethereum @LineaBuild @arbitrum @solana",
@@ -368,7 +367,7 @@ export default [
       },
       {
         "tweetId": "1899527833443021139",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@sarahzorah @MoneyGram @StellarOrg @lobstr @Decaf_so @BeansApp",
@@ -393,7 +392,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1899812484099322171",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@circle @base",
@@ -418,7 +417,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1900144545125347529",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -443,7 +442,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1900185839399034954",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@stable_summit",
@@ -477,7 +476,7 @@ export default [
       },
       {
         "tweetId": "1900201854136688931",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@Aptos",
@@ -502,7 +501,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1900556418249261162",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -545,7 +544,7 @@ export default [
       },
       {
         "tweetId": "1900645665199292798",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -570,7 +569,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1897514652193710523",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@AerodromeFi @base    Indonesia stablecoins live on Aerodrome the leading decentralised exchange on base",
@@ -613,7 +612,7 @@ export default [
       },
       {
         "tweetId": "1901212009158344847",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -638,7 +637,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901211392822399407",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@capmoney_ @Perena__ @ResolvLabs @noble_xyz @levelusd @Theo_Network @Rings_Protocol",
@@ -672,7 +671,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901244796506616021",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "Aave founder touts EURC (Circle backed Euro backed stablecoin) 4% APY beating the traditional 1%+ APY rate by fintech providers like Wise",
@@ -697,7 +696,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901594599292031110",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@circle",
@@ -722,7 +721,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901582985830240362",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": null,
@@ -765,7 +764,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901672646015856749",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@convergeonchain @Securitize   Ethena & Securitise team up, and announce Converge Chain",
@@ -790,7 +789,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901814562518700393",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@base",
@@ -815,7 +814,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901766447409627544",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@circle   Sonic chain formerly fantom network reaches a quarter billion in USDC.e",
@@ -840,7 +839,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901634984626327988",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -865,7 +864,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901260859826970846",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "despite market down trends almost $2 billion in stablecoin market cap was added last week making the total over $229 billion",
@@ -890,7 +889,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901648131940323702",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -915,7 +914,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901970853803528656",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@dragonfly_xyz @polychain    Levels raises $2.6 million led by Dragonfly Capital to power the future of stablecoins",
@@ -949,7 +948,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1901982147587748193",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@artemis    Dune & Artemis launch the State of Stablecoins 2025 report",
@@ -983,7 +982,7 @@ export default [
     "moderationHistory": [
       {
         "tweetId": "1902012237033668861",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,

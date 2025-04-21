@@ -1,4 +1,3 @@
-
 import { NewsItem } from '@/types';
 
 export const defaultNewsData: NewsItem[] = [
@@ -16,7 +15,7 @@ export const defaultNewsData: NewsItem[] = [
     "moderationHistory": [
       {
         "tweetId": "1894390288489353508",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@artemis @circle @Tether_to @PayPal @SkyEcosystem @FDLabsHQ @OndoFinance @withAUSD @Perena__",
@@ -41,7 +40,7 @@ export const defaultNewsData: NewsItem[] = [
     "moderationHistory": [
       {
         "tweetId": "1894476642845954331",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@szns_solutions",
@@ -66,7 +65,7 @@ export const defaultNewsData: NewsItem[] = [
     "moderationHistory": [
       {
         "tweetId": "1894209175284011218",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "potlock_intern",
         "action": "approve",
         "note": "@base",
@@ -91,7 +90,7 @@ export const defaultNewsData: NewsItem[] = [
     "moderationHistory": [
       {
         "tweetId": "1896515522415800751",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": null,
@@ -116,7 +115,7 @@ export const defaultNewsData: NewsItem[] = [
     "moderationHistory": [
       {
         "tweetId": "1896790344026538245",
-        "feedId": "stablecoins",
+        "feedId": "NEWSSITE",
         "adminId": "plugrel",
         "action": "approve",
         "note": "@sbivc_official",

@@ -4,13 +4,15 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { AlertCircle, Upload, Copy, CheckCircle } from 'lucide-react';
 import { toast } from 'sonner';
+import { siteConfig } from '@/config/site';
 
-const SubmitNewsForm = ({ onClose }: { onClose: () => void }) => {
+export function SubmitNewsForm({ onClose }: { onClose: () => void }) {
   const [tweetUrl, setTweetUrl] = useState('');
   const [isValid, setIsValid] = useState(false);
   const [tweetId, setTweetId] = useState('');
   const [username, setUsername] = useState('');
   const [copySuccess, setCopySuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const submissionText = "!submit @curatedotfun #changehereyourhashtag";
 
@@ -61,9 +63,9 @@ const SubmitNewsForm = ({ onClose }: { onClose: () => void }) => {
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
-        <CardTitle>Submit News</CardTitle>
+        <CardTitle>{siteConfig.submission.title}</CardTitle>
         <CardDescription>
-          Share a newsworthy tweet about changehereyourtopic with our community
+          {siteConfig.submission.description}
         </CardDescription>
       </CardHeader>
       
@@ -145,23 +147,13 @@ const SubmitNewsForm = ({ onClose }: { onClose: () => void }) => {
       </CardContent>
       
       <CardFooter className="flex justify-between">
-        <Button 
-          variant="outline" 
-          onClick={onClose}
-        >
+        <Button variant="outline" onClick={onClose}>
           Cancel
         </Button>
-        <Button 
-          onClick={handleSubmit}
-          disabled={!isValid}
-          className="gap-2"
-        >
-          <Upload className="h-4 w-4" />
-          Submit
+        <Button onClick={handleSubmit} disabled={isSubmitting}>
+          {isSubmitting ? 'Submitting...' : 'Submit'}
         </Button>
       </CardFooter>
     </Card>
   );
-};
-
-export default SubmitNewsForm;
+}

@@ -3,22 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEWSSITE | Premier Daily Stablecoin News</title>
-    <meta name="description" content="NEWSSITE, news description" />
-        <!-- changehere your content -->
-    <meta name="keywords" content="news, news1" />
-        <!-- changehere your content -->
-    <meta name="author" content="NEWSSITE" />  
-        <!-- changehere your content -->
-    <meta property="og:image" content="/lovable-uploads/9db227a7-1560-4567-9f71-0eedd2d5e8f0.png" />
-        <!-- changehere your content -->
-    <meta property="og:title" content="NEWSSITE | Description here" />
-    <!-- changehere your content -->
-    <meta property="og:description" content="Your newssite changehere description" />
-        <!-- changehere your content -->
+    <title>{siteConfig.meta.title}</title>
+    <meta name="description" content={siteConfig.meta.description} />
+    <meta name="keywords" content={siteConfig.meta.keywords} />
+    <meta name="author" content={siteConfig.meta.author} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-site-url.com/" />
+    <meta property="og:title" content={siteConfig.meta.ogTitle} />
+    <meta property="og:description" content={siteConfig.meta.ogDescription} />
+    <meta property="og:image" content={siteConfig.meta.ogImage} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content={siteConfig.meta.twitterCard} />
+    <meta property="twitter:url" content="https://your-site-url.com/" />
+    <meta property="twitter:title" content={siteConfig.meta.ogTitle} />
+    <meta property="twitter:description" content={siteConfig.meta.ogDescription} />
+    <meta property="twitter:image" content={siteConfig.meta.ogImage} />
+    
+    <link rel="icon" type="image/x-icon" href={siteConfig.favicon} />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+System:wght@300;400;500;600;700&display=swap">
-    <link rel="icon" type="image/png" href="/lovable-uploads/603d52e2-2c07-43a9-80a0-67ce5195aa2b.png">
-        <!-- changehere your content with favicon -->
   </head>
   <body>
     <div id="root"></div>

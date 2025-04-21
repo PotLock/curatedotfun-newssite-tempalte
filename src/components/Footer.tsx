@@ -1,77 +1,67 @@
 import { Link } from 'react-router-dom';
 import { Send, Upload, BookOpen } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import SubmitNewsForm from './SubmitNewsForm';
+import { SubmitNewsForm } from './SubmitNewsForm';
 import { useState } from 'react';
+import { siteConfig } from '@/config/site';
+import { Button } from '@/components/ui/button';
 
-const Footer = () => {
+export function Footer() {
   const currentYear = new Date().getFullYear();
   const [isSubmitDialogOpen, setIsSubmitDialogOpen] = useState(false);
   
   return (
-    <footer className="bg-white border-t border-gray-100 py-12 mt-20">
-      <div className="container-narrow">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
-            <Link to="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/2d4ceafd-1824-4085-bac7-a50af005350d.png" 
-                alt="NEWSSITE logo"  // changehere
-                className="h-10"
-              />
-            </Link>
-            <p className="text-gray-500 mt-2 text-sm">
-              Your newssiste description changehere
-            </p>
-           {/* changehere your content with better usbtitile */}
-
-            <a 
-              href="https://t.me/stablecoinspress" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center text-gray-600 hover:text-brand transition-colors gap-2 mt-3"
-            >
-              <Send className="h-5 w-5" />
-            </a>
-          </div>
-          
-          <div>
-            <h3 className="font-jersey text-brand font-medium mb-2 text-lg">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link 
-                  to="/learn" 
-                  className="text-gray-600 hover:text-brand transition-colors flex items-center gap-2"
-                >
-                  <BookOpen className="h-5 w-5" />
-                  <span>Learn</span>
-                </Link>
-              </li>
-              <li>
-                <Dialog open={isSubmitDialogOpen} onOpenChange={setIsSubmitDialogOpen}>
-                  <DialogTrigger asChild>
-                    <button className="text-gray-600 hover:text-brand transition-colors flex items-center gap-2">
-                      <Upload className="h-5 w-5" />
-                      <span>Submit News</span>
-                    </button>
-                  </DialogTrigger>
-                  <DialogContent className="sm:max-w-md p-0">
-                    <SubmitNewsForm onClose={() => setIsSubmitDialogOpen(false)} />
-                  </DialogContent>
-                </Dialog>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <div className="mt-10 pt-6 border-t border-gray-100 text-center">
-          <p className="text-gray-500 text-sm">
-            © {currentYear} NEWSSITE. All rights reserved.
+    <footer className="border-t">
+      <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
+        <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
+          <img
+            src={siteConfig.logo}
+            alt={`${siteConfig.name} logo`}
+            className="h-8 w-auto"
+          />
+          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+            {siteConfig.footer.description}
           </p>
+        </div>
+        <div className="flex items-center space-x-4">
+          <a
+            href={siteConfig.telegram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            <Send className="h-5 w-5" />
+          </a>
+          <Dialog open={isSubmitDialogOpen} onOpenChange={setIsSubmitDialogOpen}>
+            <DialogTrigger asChild>
+              <Button variant="outline" size="sm">
+                Submit News
+              </Button>
+            </DialogTrigger>
+            <DialogContent>
+              <SubmitNewsForm onClose={() => setIsSubmitDialogOpen(false)} />
+            </DialogContent>
+          </Dialog>
+        </div>
+      </div>
+      <div className="border-t py-6 md:py-0">
+        <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
+          <p className="text-center text-sm text-muted-foreground md:text-left">
+            © {currentYear} {siteConfig.name}. All rights reserved.
+          </p>
+          <nav className="flex items-center space-x-4">
+            {siteConfig.footer.links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm text-muted-foreground hover:text-foreground"
+              >
+                {link.text}
+              </a>
+            ))}
+          </nav>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

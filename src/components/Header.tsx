@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Send, Upload, BookOpen } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import SubmitNewsForm from './SubmitNewsForm';
+import { SubmitNewsForm } from './SubmitNewsForm';
+import { siteConfig } from '@/config/site';
 
-const Header = () => {
+export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSubmitDialogOpen, setIsSubmitDialogOpen] = useState(false);
@@ -19,12 +20,14 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-white py-5'}`}>
-      <div className="container-narrow flex items-center justify-between">
-        <Link to="/" className="flex items-center">
-          <img src="/lovable-uploads/2d4ceafd-1824-4085-bac7-a50af005350d.png" alt="NEWSSITE logo" className="h-10 md:h-12" /> 
-        </Link>
-{/* changehere the  logo */}
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-14 items-center">
+        <div className="mr-4 flex">
+          <a className="mr-6 flex items-center space-x-2" href="/">
+            <img src={siteConfig.logo} alt={`${siteConfig.name} logo`} className="h-10 md:h-12" />
+          </a>
+        </div>
+
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link 
@@ -34,11 +37,11 @@ const Header = () => {
             <BookOpen className="h-5 w-5" />
             <span>Learn</span>
           </Link>
-          <a 
-            href="https://t.me/NEWSSITE" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-black hover:text-brand transition-colors" 
+          <a
+            href={siteConfig.telegram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black hover:text-brand transition-colors"
             aria-label="Telegram"
           >
             <Send className="h-5 w-5" />
@@ -74,11 +77,11 @@ const Header = () => {
               <BookOpen className="h-5 w-5" />
               <span>Learn</span>
             </Link>
-            <a 
-              href="https://t.me/NEWSSITE" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="flex items-center text-black font-medium hover:text-brand transition-colors px-4 py-2 gap-2" 
+            <a
+              href={siteConfig.telegram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-black font-medium hover:text-brand transition-colors px-4 py-2 gap-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <Send className="h-5 w-5" />
@@ -105,6 +108,4 @@ const Header = () => {
       )}
     </header>
   );
-};
-
-export default Header;
+}

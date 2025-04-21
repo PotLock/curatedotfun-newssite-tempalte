@@ -7,7 +7,7 @@ import { defaultNewsData } from '@/utils/defaultData';
 import { toast } from 'sonner';
 import SearchFilters, { TimeFilter, SortOption } from './SearchFilters';
 import EmptyState from './EmptyState';
-import SubmitNewsForm from './SubmitNewsForm';
+import { SubmitNewsForm } from './SubmitNewsForm';
 import { siteConfig } from '@/config/site';
 
 const NewsFeed = () => {

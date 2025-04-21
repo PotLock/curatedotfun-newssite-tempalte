@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import NewsFeed from '@/components/NewsFeed';
 import { siteConfig } from '@/config/site';
 

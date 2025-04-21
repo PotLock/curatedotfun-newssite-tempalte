@@ -12,7 +12,7 @@ const SubmitNewsForm = ({ onClose }: { onClose: () => void }) => {
   const [username, setUsername] = useState('');
   const [copySuccess, setCopySuccess] = useState(false);
   
-  const submissionText = "!submit @curatedotfun #stablecoins";
+  const submissionText = "!submit @curatedotfun #changehereyourhashtag";
 
   const validateTweetUrl = (url: string) => {
     const twitterRegex = /(?:twitter|x)\.com\/([^\/]+)\/status\/(\d+)/i;
@@ -63,7 +63,7 @@ const SubmitNewsForm = ({ onClose }: { onClose: () => void }) => {
       <CardHeader>
         <CardTitle>Submit News</CardTitle>
         <CardDescription>
-          Share a newsworthy tweet about stablecoins with our community
+          Share a newsworthy tweet about changehereyourtopic with our community
         </CardDescription>
       </CardHeader>
       
@@ -133,7 +133,7 @@ const SubmitNewsForm = ({ onClose }: { onClose: () => void }) => {
             <div className="p-3 bg-gray-50 border border-gray-200 rounded-md">
               <h4 className="font-medium text-sm mb-2">Submission Instructions:</h4>
               <ol className="text-xs text-gray-700 space-y-1 list-decimal pl-4">
-                <li>Enter the URL of a newsworthy tweet about stablecoins</li>
+                <li>Enter the URL of a newsworthy tweet to submit to us</li>
                 <li>Copy the submission text shown above</li>
                 <li>Click "Submit" to open a reply form on Twitter</li>
                 <li>Post the reply to complete your submission</li>
